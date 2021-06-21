@@ -110,7 +110,7 @@ html {
           box-shadow: 1rem 1rem;
 }
 
-#container .container__game .container__controls .snap-button:hover {
+#container .container__game .container__controls .snap-button:active {
   background-color: #c20000;
   color: #fff;
   -webkit-box-shadow: 0.5rem 0.5rem #1b1b1b;
