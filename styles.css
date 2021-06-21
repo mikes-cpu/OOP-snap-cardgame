@@ -13,6 +13,7 @@ html {
 #container {
   font-size: 2rem;
   padding: 5%;
+  background-color: red;
 }
 
 #container .container__title {
