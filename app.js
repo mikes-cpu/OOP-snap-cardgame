@@ -293,7 +293,7 @@ class Gameboard extends CardItems {
     controls.className = "container__controls";
     controls.innerHTML = `
     <button class="snap-button">SNAP</button>
-    <p class="desc">Match either the rank or suite with the previous card!</p>
+    <p class="desc">Match either the rank or suit with the previous card!</p>
     <p id="player-score">Player Score: ${this.score}</p>
     <p id="computer-score">Computer Score: ${this.computerScore}</p>
     `;
