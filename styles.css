@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #0b330b;
+}
+
+#container {
+  font-size: 2rem;
+  padding: 5%;
+}
+
+#container .container__title {
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+}
+
+#container .container__new-game-button {
+  display: block;
+  margin: auto;
+  font-family: "Karla", sans-serif;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  background-color: #e7e7e7;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+}
+
+#container .container__game .game__card {
+  border-radius: 20px;
+  width: 30rem;
+  height: 42rem;
+  background-color: #d8d8d8;
+  margin: auto;
+  padding: 3rem;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container .container__game .game__card .card__top-section .top-section__card-suite-img-container {
+  width: 10%;
+}
+
+#container .container__game .game__card .card__top-section .top-section__card-suite-img-container .card-suite-img-container__card-suite {
+  width: 100%;
+}
+
+#container .container__game .game__card .card__mid-section .mid-section__card-img-container {
+  width: 40%;
+  margin: auto;
+}
+
+#container .container__game .game__card .card__mid-section .mid-section__card-img-container .card-img-container__card-img {
+  width: 100%;
+}
+
+#container .container__game .game__card .card__bottom-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#container .container__game .game__card .card__bottom-section .bottom-section__card-suite-img-container {
+  width: 10%;
+}
+
+#container .container__game .game__card .card__bottom-section .bottom-section__card-suite-img-container .card-suite-img-container__card-suite {
+  width: 100%;
+}
+
+#container .container__game .container__controls {
+  text-align: center;
+}
+
+#container .container__game .container__controls .snap-button {
+  margin-top: 4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+  font-size: 3rem;
+  background-color: #e9e9e9;
+  border: 1px solid grey;
+  color: #363636;
+  -webkit-box-shadow: 1rem 1rem;
+          box-shadow: 1rem 1rem;
+}
+
+#container .container__game .container__controls .snap-button:hover {
+  background-color: #c20000;
+  color: #fff;
+  -webkit-box-shadow: 0.5rem 0.5rem #1b1b1b;
+          box-shadow: 0.5rem 0.5rem #1b1b1b;
+}
+
+#container .container__game .container__controls #player-score {
+  margin-top: 2rem;
+  font-family: "Karla", sans-serif;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+#container .container__game .container__controls #computer-score {
+  margin-top: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+#container .container__game .container__controls .desc {
+  padding-top: 4rem;
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  opacity: 0.6;
+  width: 30%;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  #container .container__new-game-button {
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    background-color: #e7e7e7;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+  }
+  #container .container__game .game__card {
+    border-radius: 20px;
+    width: 15rem;
+    height: 25rem;
+    background-color: #d8d8d8;
+    margin: 2rem auto 0rem auto;
+    padding: 2rem;
+    font-size: 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #container .container__game .game__card .card__top-section .top-section__card-suite-img-container {
+    width: 15%;
+  }
+  #container .container__game .game__card .card__top-section .top-section__card-suite-img-container .card-suite-img-container__card-suite {
+    width: 100%;
+  }
+  #container .container__game .game__card .card__mid-section .mid-section__card-img-container {
+    width: 40%;
+    margin: auto;
+  }
+  #container .container__game .game__card .card__mid-section .mid-section__card-img-container .card-img-container__card-img {
+    width: 100%;
+  }
+  #container .container__game .game__card .card__bottom-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #container .container__game .game__card .card__bottom-section .bottom-section__card-suite-img-container {
+    width: 15%;
+  }
+  #container .container__game .game__card .card__bottom-section .bottom-section__card-suite-img-container .card-suite-img-container__card-suite {
+    width: 100%;
+  }
+  #container .container__game .container__controls {
+    text-align: center;
+  }
+  #container .container__game .container__controls .snap-button {
+    margin-top: 2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
+    background-color: #e9e9e9;
+    border: 1px solid grey;
+    color: #363636;
+    -webkit-box-shadow: 1rem 1rem;
+            box-shadow: 1rem 1rem;
+  }
+  #container .container__game .container__controls .snap-button:hover {
+    background-color: #c20000;
+    color: #fff;
+    -webkit-box-shadow: 0.5rem 0.5rem #1b1b1b;
+            box-shadow: 0.5rem 0.5rem #1b1b1b;
+  }
+  #container .container__game .container__controls #player-score {
+    margin-top: 2rem;
+    font-family: "Karla", sans-serif;
+    font-size: 2rem;
+    opacity: 0.8;
+  }
+  #container .container__game .container__controls #computer-score {
+    margin-top: 1rem;
+    font-family: "Karla", sans-serif;
+    font-size: 2rem;
+    opacity: 0.8;
+  }
+  #container .container__game .container__controls .desc {
+    padding-top: 4rem;
+    font-family: "Karla", sans-serif;
+    font-size: 1.6rem;
+    opacity: 0.6;
+    width: 70%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

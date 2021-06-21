@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #0b330b;
+}
+
+#container {
+  font-size: 2rem;
+  padding: 5%;
+  .container__title {
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+  .container__new-game-button {
+    display: block;
+    margin: auto;
+    font-family: "Karla", sans-serif;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    background-color: #e7e7e7;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    // border: 1px solid black;
+  }
+  .container__game {
+    .game__card {
+      border-radius: 20px;
+      width: 30rem;
+      height: 42rem;
+      background-color: #d8d8d8;
+      margin: auto;
+      padding: 3rem;
+      font-size: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .card__top-section {
+        .top-section__card-rank {
+        }
+
+        .top-section__card-suite-img-container {
+          width: 10%;
+          .card-suite-img-container__card-suite {
+            width: 100%;
+          }
+        }
+      }
+
+      .card__mid-section {
+        .mid-section__card-img-container {
+          width: 40%;
+          margin: auto;
+          .card-img-container__card-img {
+            width: 100%;
+          }
+        }
+      }
+
+      .card__bottom-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .bottom-section__card-suite-img-container {
+          width: 10%;
+          .card-suite-img-container__card-suite {
+            width: 100%;
+          }
+        }
+
+        .bottom-section__card-rank {
+        }
+      }
+    }
+    .container__controls {
+      text-align: center;
+      .snap-button {
+        margin-top: 4rem;
+        width: fit-content;
+        border-radius: 2rem;
+        padding: 2rem 3rem;
+        font-size: 3rem;
+        background-color: rgb(233, 233, 233);
+        border: 1px solid grey;
+        color: rgb(54, 54, 54);
+        box-shadow: 1rem 1rem;
+        &:hover {
+          background-color: #c20000;
+          color: #fff;
+          box-shadow: 0.5rem 0.5rem rgb(27, 27, 27);
+        }
+      }
+      #player-score {
+        margin-top: 2rem;
+        font-family: "Karla", sans-serif;
+        font-size: 3rem;
+        opacity: 0.8;
+      }
+      #computer-score {
+        margin-top: 1rem;
+        font-family: "Karla", sans-serif;
+        font-size: 3rem;
+        opacity: 0.8;
+      }
+
+      .desc {
+        padding-top: 4rem;
+        font-family: "Karla", sans-serif;
+        font-size: 2rem;
+        opacity: 0.6;
+        width: 30%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+// Mobile Phone
+@media (max-width: 500px) {
+  #container {
+    .container__title {
+    }
+    .container__new-game-button {
+      padding: 1rem 3rem;
+      font-size: 1.6rem;
+      background-color: #e7e7e7;
+      border-radius: 2rem;
+      margin-bottom: 4rem;
+    }
+    .container__game {
+      .game__card {
+        border-radius: 20px;
+        width: 15rem;
+        height: 25rem;
+        background-color: #d8d8d8;
+        margin: 2rem auto 0rem auto;
+        padding: 2rem;
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .card__top-section {
+          .top-section__card-rank {
+          }
+
+          .top-section__card-suite-img-container {
+            width: 15%;
+            .card-suite-img-container__card-suite {
+              width: 100%;
+            }
+          }
+        }
+
+        .card__mid-section {
+          .mid-section__card-img-container {
+            width: 40%;
+            margin: auto;
+            .card-img-container__card-img {
+              width: 100%;
+            }
+          }
+        }
+
+        .card__bottom-section {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .bottom-section__card-suite-img-container {
+            width: 15%;
+            .card-suite-img-container__card-suite {
+              width: 100%;
+            }
+          }
+
+          .bottom-section__card-rank {
+          }
+        }
+      }
+      .container__controls {
+        text-align: center;
+        .snap-button {
+          margin-top: 2rem;
+          width: fit-content;
+          border-radius: 2rem;
+          padding: 1.5rem 2.5rem;
+          font-size: 2rem;
+          background-color: rgb(233, 233, 233);
+          border: 1px solid grey;
+          color: rgb(54, 54, 54);
+          box-shadow: 1rem 1rem;
+          &:hover {
+            background-color: #c20000;
+            color: #fff;
+            box-shadow: 0.5rem 0.5rem rgb(27, 27, 27);
+          }
+        }
+        #player-score {
+          margin-top: 2rem;
+          font-family: "Karla", sans-serif;
+          font-size: 2rem;
+          opacity: 0.8;
+        }
+        #computer-score {
+          margin-top: 1rem;
+          font-family: "Karla", sans-serif;
+          font-size: 2rem;
+          opacity: 0.8;
+        }
+
+        .desc {
+          padding-top: 4rem;
+          font-family: "Karla", sans-serif;
+          font-size: 1.6rem;
+          opacity: 0.6;
+          width: 70%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
